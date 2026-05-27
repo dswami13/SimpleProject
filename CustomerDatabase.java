@@ -25,8 +25,8 @@ public class CustomerDatabase {
         // Using an anonymous Comparator to sort by account number descending
         list.sort(new Comparator<BankAccount>() {
             @Override
-            public int compare(BankAccount a1, BankAccount a2) {
-                return a2.getAccountNumber().compareTo(a1.getAccountNumber());
+            public int compare(BankAccount acc1, BankAccount acc2) {
+                return acc2.getAccountNumber().compareTo(acc1.getAccountNumber());
             }
         });
 
